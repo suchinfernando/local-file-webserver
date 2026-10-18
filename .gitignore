@@ -1,0 +1,50 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Test / tooling caches ----
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# ---- Local configuration overrides ----
+# The shipped config.ini is a documented template and stays tracked.
+# Keep personal configs (which may contain passwords) out of git:
+config.local.ini
+*.local.ini
+
+# ---- Runtime state created by the app ----
+.trash/
+favorites.json
+
+# ---- Editors / IDEs ----
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ---- OS cruft ----
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+desktop.ini
