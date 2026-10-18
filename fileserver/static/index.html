@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<title>Files</title>
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 9.5V21h14V9.5"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 10.7l6.8-4.2M8.6 13.3l6.8 4.2"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4M8 8l4-4 4 4M4 20h16"/></symbol>
+  <symbol id="i-folder-plus" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M12 11v6M9 14h6"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 5v6h-6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v12M8 12l4 4 4-4M4 20h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-dots" viewBox="0 0 24 24"><circle cx="12" cy="5" r="1.7" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.7" fill="currentColor" stroke="none"/><circle cx="12" cy="19" r="1.7" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 20V4M6 10l6-6 6 6"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M4 18l5-5 4 4 3-3 4 4"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z"/></symbol>
+  <symbol id="i-audio" viewBox="0 0 24 24"><path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></symbol>
+  <symbol id="i-pdf" viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4M9 13h6M9 17h6"/></symbol>
+  <symbol id="i-text" viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4M9 12h6M9 16h6"/></symbol>
+  <symbol id="i-archive" viewBox="0 0 24 24"><path d="M4 5h16v4H4zM5 9h14v11H5z"/><path d="M11 13h2"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+  <symbol id="i-panel" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16"/></symbol>
+  <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+  <symbol id="i-drive" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 15h.01M11 15h6"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-desktop" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol>
+  <symbol id="i-document" viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4M9 13h6M9 17h6"/></symbol>
+  <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.2 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"/></symbol>
+  <symbol id="i-star-filled" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 3.5l2.6 5.3 5.9.9-4.3 4.2 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.5"/></symbol>
+  <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6c1.6 0 3 .4 4.3 1M22 12s-3.5 6-10 6c-1.6 0-3-.4-4.3-1"/><path d="M3 3l18 18"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2M6 7l1 13h10l1-13"/></symbol>
+  <symbol id="i-restore" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.3-5.7"/><path d="M4 5v6h6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+</defs></svg>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <button id="sidebar-btn" class="icon-btn" title="Toggle sidebar" aria-label="Toggle sidebar"><svg class="icon"><use href="#i-panel"/></svg></button>
+    <button id="home-btn" class="icon-btn" title="Go home" aria-label="Home"><svg class="icon"><use href="#i-home"/></svg></button>
+    <nav id="breadcrumbs" class="breadcrumbs" aria-label="Breadcrumb"></nav>
+  </div>
+  <div class="topbar-right">
+    <button id="upload-btn" class="btn btn-primary"><svg class="icon"><use href="#i-upload"/></svg><span>Upload</span></button>
+    <button id="mkdir-btn" class="btn"><svg class="icon"><use href="#i-folder-plus"/></svg><span>New folder</span></button>
+    <button id="star-btn" class="icon-btn" title="Star this folder" aria-label="Star this folder"><svg class="icon"><use href="#i-star"/></svg></button>
+    <button id="share-btn" class="icon-btn" title="Share on LAN" aria-label="Share"><svg class="icon"><use href="#i-share"/></svg></button>
+    <button id="theme-btn" class="icon-btn" title="Toggle theme" aria-label="Toggle theme"><svg class="icon"><use href="#i-sun"/></svg></button>
+  </div>
+</header>
+
+<section class="toolbar">
+  <div class="search">
+    <svg class="icon search-icon"><use href="#i-search"/></svg>
+    <input id="search" type="search" placeholder="Filter in this folder..." autocomplete="off" spellcheck="false">
+    <button id="scope-btn" class="icon-btn scope-btn" title="Search scope: this folder" aria-label="Search scope"><svg class="icon"><use href="#i-folder"/></svg></button>
+  </div>
+  <div class="toolbar-controls">
+    <button id="select-btn" class="icon-btn" title="Select items" aria-label="Select items"><svg class="icon"><use href="#i-check"/></svg></button>
+    <button id="hidden-btn" class="icon-btn" title="Show hidden files" aria-label="Toggle hidden files"><svg class="icon"><use href="#i-eye"/></svg></button>
+    <label class="select-wrap">
+      Sort
+      <select id="sort">
+        <option value="name">Name</option>
+        <option value="size">Size</option>
+        <option value="mtime">Modified</option>
+        <option value="kind">Type</option>
+      </select>
+    </label>
+    <button id="sort-dir" class="icon-btn" title="Toggle sort direction" aria-label="Toggle sort direction"><svg class="icon"><use href="#i-arrow-up"/></svg></button>
+    <div class="view-toggle" role="group" aria-label="View mode">
+      <button id="view-grid" class="icon-btn active" title="Grid view" aria-label="Grid view"><svg class="icon"><use href="#i-grid"/></svg></button>
+      <button id="view-list" class="icon-btn" title="List view" aria-label="List view"><svg class="icon"><use href="#i-list"/></svg></button>
+    </div>
+    <button id="refresh-btn" class="icon-btn" title="Refresh" aria-label="Refresh"><svg class="icon"><use href="#i-refresh"/></svg></button>
+  </div>
+</section>
+
+<div class="workspace">
+  <aside id="sidebar" class="sidebar" aria-label="Navigation">
+    <div class="sidebar-scroll">
+      <section class="sb-section" id="sb-starred-section">
+        <div class="sb-heading">Starred</div>
+        <ul class="sb-list" id="sb-starred"></ul>
+      </section>
+      <section class="sb-section">
+        <div class="sb-heading">Places</div>
+        <ul class="sb-list" id="sb-places"></ul>
+      </section>
+      <section class="sb-section" id="sb-drives-section">
+        <div class="sb-heading">Drives</div>
+        <ul class="sb-list" id="sb-drives"></ul>
+      </section>
+      <section class="sb-section" id="sb-trash-section">
+        <div class="sb-heading">Trash</div>
+        <ul class="sb-list" id="sb-trash"></ul>
+      </section>
+    </div>
+  </aside>
+  <div id="sidebar-backdrop" class="sidebar-backdrop hidden"></div>
+
+  <main id="main">
+    <div class="dropzone-hint"><span>Drop files to upload</span></div>
+    <ul id="files" class="files grid" aria-live="polite"></ul>
+    <div id="empty" class="empty hidden">This folder is empty.</div>
+    <div id="loading" class="loading hidden">Loading&hellip;</div>
+  </main>
+</div>
+
+<div id="actionbar" class="actionbar hidden">
+  <span id="actionbar-count" class="actionbar-count">0 selected</span>
+  <div class="actionbar-actions">
+    <button id="ab-download" class="btn"><svg class="icon"><use href="#i-download"/></svg><span>ZIP</span></button>
+    <button id="ab-delete" class="btn btn-danger"><svg class="icon"><use href="#i-trash"/></svg><span>Delete</span></button>
+    <button id="ab-empty" class="btn btn-danger hidden"><svg class="icon"><use href="#i-trash"/></svg><span>Empty trash</span></button>
+    <button id="ab-clear" class="btn">Clear</button>
+  </div>
+</div>
+
+<div id="status" class="statusbar">
+  <span id="status-text"></span>
+  <span id="status-right"></span>
+</div>
+
+<div id="uploads" class="uploads" aria-live="polite"></div>
+
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card">
+    <div class="modal-head">
+      <span id="modal-title" class="modal-title"></span>
+      <div class="modal-actions">
+        <a id="modal-download" class="icon-btn" href="#" title="Download" aria-label="Download"><svg class="icon"><use href="#i-download"/></svg></a>
+        <button class="icon-btn" data-close title="Close" aria-label="Close"><svg class="icon"><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+    <div id="modal-body" class="modal-body"></div>
+  </div>
+</div>
+
+<div id="share-modal" class="modal hidden" role="dialog" aria-modal="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card modal-card-sm">
+    <div class="modal-head">
+      <span class="modal-title">Open on another device</span>
+      <button class="icon-btn" data-close title="Close" aria-label="Close"><svg class="icon"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="share-body">
+      <div id="qr" class="qr"></div>
+      <div class="share-urls">
+        <div class="share-row"><span class="share-label">Network</span><code id="share-lan"></code></div>
+        <div class="share-row"><span class="share-label">Local</span><code id="share-local"></code></div>
+        <p class="share-note">Both devices must be on the same network. Credentials are required if auth is enabled.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="prompt-modal" class="modal hidden" role="dialog" aria-modal="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card modal-card-sm">
+    <div class="modal-head"><span id="prompt-title" class="modal-title">Rename</span></div>
+    <div class="prompt-body">
+      <input id="prompt-input" type="text" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="prompt-actions">
+      <button class="btn" data-close>Cancel</button>
+      <button id="prompt-ok" class="btn btn-primary">OK</button>
+    </div>
+  </div>
+</div>
+
+<input id="file-input" type="file" multiple hidden>
+<div id="toasts" class="toasts" aria-live="assertive"></div>
+
+<script src="/static/js/qrcode.js"></script>
+<script src="/static/js/app.js"></script>
+</body>
+</html>
