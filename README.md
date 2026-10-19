@@ -240,7 +240,6 @@ read-only mode.
 ```
 serve.py                     CLI entry point (thin wrapper)
 config.ini                   Commented default configuration
-PROPOSED.md                  Design notes for the sidebar/config feature set
 fileserver/
   __main__.py                `python3 -m fileserver` entry point
   cli.py                     Argument parsing, config merge and startup
